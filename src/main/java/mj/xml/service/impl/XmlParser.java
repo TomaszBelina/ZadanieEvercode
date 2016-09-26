@@ -72,6 +72,9 @@ public class XmlParser implements IXmlParser {
                             tmpPerson.getPhone().add(phone);
                         }
                         break;
+                    default:
+                        //TODO dodać logger i obsłużyć sytuacje błędnych danych wejściowych
+                        break;
                 }
             }
             people.getPersonList().add(tmpPerson);

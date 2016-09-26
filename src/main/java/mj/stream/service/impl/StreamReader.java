@@ -20,6 +20,7 @@ public class StreamReader implements IStreamReader {
         try {
             return IOUtils.readLines(stream, StandardCharsets.UTF_8);
         } catch (IOException e) {
+            //TODO dodać logger
             e.printStackTrace();
         }
         return null;
